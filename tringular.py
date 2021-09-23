@@ -11,7 +11,7 @@ class fuzzy:
 
     # Membuat Bintang
     def bintang(self, angka):
-        self.angka = angka # Constructor paramater
+        self.angka = angka 
         for i in range(angka):
             print("*", end=" ")
         print("") 
@@ -89,8 +89,8 @@ class fuzzy:
                         temp2.append(EF2[index])
                 
                 ES[i] = max(temp) # Untuk menentukan element terbesar
-                ES1[i] = max(temp1)
-                ES2[i] = max(temp2)
+                ES1[i] = max(temp1) # Untuk menentukan element terbesar
+                ES2[i] = max(temp2) # Untuk menentukan element terbesar
                 try:
                     EF[i] = ES[i] + data['A'][i]
                     EF1[i] = ES1[i] + data['B'][i]
@@ -162,8 +162,8 @@ class fuzzy:
                     
                 
                 LF[i] = min(temp) # Mencari nilai terkecil dari LF
-                LF1[i] = min(temp1)
-                LF2[i] = min(temp2)
+                LF1[i] = min(temp1) # Mencari nilai terkecil dari LF
+                LF2[i] = min(temp2) # Mencari nilai terkecil dari LF
                 
                 LS[i] = LF[i] - data['A'][i]
                 LS1[i] = LF1[i] - data['B'][i]
